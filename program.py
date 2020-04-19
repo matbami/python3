@@ -4,7 +4,7 @@ level = input('Enter your level: ').lower()
 
 
 
-while(level!='e' or level!='m' or level!='h'):
+while(level!='e' and level!='m' and level!='h'):
     level = input('Enter the required level please: ').lower()
     if(level=='e' or level=='m' or level=='h'):
         break
