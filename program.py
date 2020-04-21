@@ -14,7 +14,13 @@ if(level=='e'):
     print('you have just 6 GUESSES')
     magicnumber = 5
     for i in range(1,7):
+    
         number = input('Guess a number between 1-10: ')
+        while(number.isdigit() ==False):
+
+
+            number = input('Please input a number not an alphabet: ') 
+
         
         if(int(number) == magicnumber):
             
@@ -31,6 +37,8 @@ if(level=='m'):
     magicnumber = 14
     for i in range(1,5):
         number = input('Guess a number between 1-20: ')
+        while(number.isdigit() ==False):
+            number = input('Please input a number not an alphabet: ') 
         
 
         if(int(number) == magicnumber):
@@ -49,6 +57,9 @@ if(level=='h'):
     print('you have just 3 GUESSES')
     for i in range(1,4):
         number = input('Guess a number between 1-50: ')
+
+        while(number.isdigit() ==False):
+            number = input('Please input a number not an alphabet: ') 
         
 
         if(int(number) == magicnumber):
